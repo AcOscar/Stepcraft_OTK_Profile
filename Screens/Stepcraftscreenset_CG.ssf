@@ -3710,14 +3710,14 @@ AS3.Addbackground(0, 0, 1280, 720, 288, 100, 100);
 //Add backgrounds to jog screen
 AS3jog.Addbackground(0, 0, 300, 692, 62, 200, 1);
 //Select the startup layers for the main screen
-AS3.selectlayer(100);
 AS3.selectlayer(27);
 AS3.selectlayer(26);
 AS3.selectlayer(25);
 AS3.selectlayer(19);
 AS3.selectlayer(41);
 AS3.selectlayer(11);
-AS3.selectlayer(9);
+AS3.selectlayer(42);
+AS3.selectlayer(6);
 //Select the startup layers for the jog screen
 //Add buttons to main screen
 AS3.Addbutton(85, 530, 130, 40, false, false, 54, 170, 20);
@@ -4202,6 +4202,7 @@ AS3.Addbutton(1012, 143, 29, 29, true, false, 2, 110, 100);
 AS3.Addbutton(1012, 107, 29, 29, true, false, 2, 109, 100);
 AS3.Addbutton(1012, 73, 29, 29, true, false, 2, 108, 100);
 AS3.Addbutton(1012, 38, 29, 29, true, false, 2, 107, 100);
+AS3.Addbutton(972, 206, 60, 37, false, false, 73, 196, 100);
 //Add buttons to jog screen
 AS3jog.Addbutton(135, 540, 70, 70, false, false, 33, 147, 1);
 AS3jog.Addbutton(20, 540, 70, 70, false, false, 34, 148, 1);
@@ -6055,8 +6056,6 @@ AS3.Addfield("", "Arial", "left", 14, -65536, 715, 465, 285, "showfieldnb", -1.7
 AS3.Setfieldtext("2.1", 28000);
 AS3.Addfield("", "Arial", "left", 14, -65536, 703, 481, 285, "showfieldnb", -1.7976931348623157E+308, 1.7976931348623157E+308, 28001, 41);
 AS3.Setfieldtext("3.5", 28001);
-AS3.Addfield("", "Arial", "left", 15, -8815751, 670, 694, 402, "showfieldnb", -1.7976931348623157E+308, 1.7976931348623157E+308, 900, 100);
-AS3.Setfieldtext("Profile: ", 900);
 AS3.Addfield("", "Arial", "center", 18, -8815751, 550, 536, 106, "textfield", 0, 1.7976931348623157E+308, 866, 100);
 AS3.Setfieldtext("0", 866);
 AS3.Filterfieldtext("0123456789", 866);
@@ -6068,6 +6067,8 @@ AS3.Addfield("", "Arial", "center", 20, -16777216, 845, 210, 60, "textfieldnb", 
 AS3.Setfieldtext(" %", 232);
 AS3.Filterfieldtext("0123456789.\\-%", 232);
 AS3.Addfield("", "Arial", "right", 20, -16777216, 859, 274, 80, "textfieldnb", -1.7976931348623157E+308, 1.7976931348623157E+308, 869, 100);
+AS3.Addfield("", "Arial", "left", 16, -16777216, 662, 692, 422, "showfieldnb", -1.7976931348623157E+308, 1.7976931348623157E+308, 895, 100);
+AS3.Setfieldtext("-", 895);
 //Add textfields to jog screen
 AS3jog.Addfield("", "Arial", "center", 22, -16777216, 98, 344, 80, "fieldnb", 0, 100, 913, 1);
 AS3jog.Setfieldtext("10", 913);
@@ -6168,7 +6169,8 @@ AS3.Addled(710, 485, 90, 18, false, 264, 244, 26);
 AS3.Addled(803, 468, 96, 35, true, 242, 301, 26);
 AS3.Addled(696, 409, 25, 15, false, 67, 254, 2);
 AS3.Addled(948, 275, 19, 19, true, 68, 29, 100);
-AS3.Addled(948, 249, 19, 19, true, 68, 36, 100);
+AS3.Addled(948, 245, 19, 19, true, 68, 36, 100);
+AS3.Addled(948, 214, 19, 19, false, 67, 37, 100);
 //Add LEDs to jog screen
 //Add labels to main screen
 AS3.Addlabel(" ", "Arial", "left", 16, -16777216, 214, 602, 13);
@@ -6351,7 +6353,7 @@ AS3.Addlabel("Keycode                   Function", "Arial", "left", 16, -1677721
 AS3.Addlabel("Keycode                   Function", "Arial", "left", 16, -16777216, 640, 91, 11);
 AS3.Addlabel("ACTUAL LINE", "Arial", "left", 16, -8815751, 550, 513, 100);
 AS3.Addlabel("XYZ Limit", "Arial", "left", 16, -16777216, 971, 274, 100);
-AS3.Addlabel("Emergency Stop", "Arial", "left", 16, -16777216, 969, 249, 100);
+AS3.Addlabel("Emergency Stop", "Arial", "left", 16, -16777216, 969, 245, 100);
 //Add labels to jog screen
 AS3jog.Addlabel("Jog feed %", "Arial", "left", 20, -1, 90, 314, 1);
 //Add lists to main screen
